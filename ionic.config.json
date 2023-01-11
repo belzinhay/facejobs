@@ -1,0 +1,7 @@
+{
+  "name": "facejobs",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
