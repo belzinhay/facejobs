@@ -1,21 +1,56 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
+
+<ion-header>
+  <ion-toolbar mode="ios" color="tertiary">
+        <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title color="dark">FaceJobs</ion-title>
   </ion-toolbar>
+  
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">{{ folder }}</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  
+  <ion-searchbar placeholder="Default"></ion-searchbar>
+  
+  <ion-card color="secondary">
+    <ion-card-header>
+      <ion-card-title>Casas Bahia Contrata</ion-card-title>
+      <ion-card-subtitle>Assistente Adiministrativo</ion-card-subtitle>
+      <ion-img src="https://i.pinimg.com/originals/a9/fa/0f/a9fa0fb8fd766f16f273fc8f9ed3cff5.jpg" style="width:50px;height:60px;"></ion-img>
+    </ion-card-header>
+<ion-card-content>
+  <b>Descrição Geral</b>
+  <br>Empresa localizada na cidade de são paulo.<br>
+  <b>Requisitos</b>
+  <br>Cursando superior em administração de empresas. <br>
+  <b>Atribuições</b>
+  <br>Realizar tarefas referentes ao suporte administrativo nos processos de compras; <br>
+  <b>Benefícios</b>
+  <br>Vale transporte
+    </ion-card-content>
+  </ion-card>
 
-  <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Swedish Match do Brasil S/A</ion-card-title>
+      <ion-card-subtitle>Jovem Aprendiz</ion-card-subtitle>
+      <ion-img src="https://storage.googleapis.com/ecdt-logo-saida/a6f9c69599cdb3ba97edeba1fb7656fc045c9024863ef6d147dfb188ff5b8cba/SWEDISH-MATCH-DO-BRASIL-SA.webp" style="width:50px;height:60px;"></ion-img>
+    </ion-card-header>
+<ion-card-content>
+ 
+ <b>Descrição Geral</b>
+  <br>Vaga de aprendiz de mecanica .<br>
+  <b>Requisitos</b>
+  <br>Estar cursando o ensino fundamental ou médio (noturno) ou já ter concluído. <br>
+  <b>Atribuições</b>
+  <br>Atuar na área de mecânica, visando ao aprendizado de competências próprias da atividade profissional e à 
+  contextualização curricular, objetivando o desenvolvimento profissional.<br>
+  <b>Benefícios</b>
+  <br>Vale transporte
+    </ion-card-content>
+  </ion-card>
+  
+
 </ion-content>
+

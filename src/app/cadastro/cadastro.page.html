@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar mode="ios" color="primary">
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title color="Secondary">Cadastro</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</div>
+
+<ion-content>
+
+  <form #Form="ngForm">
+    <ion-item>
+      <ion-label>Nome Completo:</ion-label>
+      <ion-input type="text" name="nome" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>CPF:</ion-label>
+      <ion-input type="text" name="cpf" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>CNPJ:</ion-label>
+      <ion-input type="text" name="cnpj" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>E-mail:</ion-label>
+      <ion-input type="text" name="email" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Senha:</ion-label>
+      <ion-input type="password" name="senha" ></ion-input>
+    </ion-item>
+
+  </form>
+  <ion-button type="submit" color="success" routerLink="/login">Cadastrar</ion-button>
+  
+</ion-content>
