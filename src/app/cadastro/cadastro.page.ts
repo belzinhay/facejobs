@@ -12,6 +12,7 @@ import { login } from 'src/app/model/login.model';
 })
 export class CadastroPage implements OnInit {
 
+  routerId = null;
   cadastro: login[] = [];
 
 
@@ -70,7 +71,7 @@ export class CadastroPage implements OnInit {
           }catch(err){
             console.log(err)
           }finally{
-            this.util.toastMessage("Cadastro Feito com Sucesso", "bottom", 2000, "sucess");
+            this.util.toastando("Cadastro Feito com Sucesso", "bottom", 2000, "sucess");
           }
         }
       }
@@ -86,7 +87,7 @@ export class CadastroPage implements OnInit {
     }catch(err){
       console.log(err);
     }finally{
-      this.util.toastMessage("Cadastro Excluído", "bottom", 2000, "danger");
+      this.util.toastando("Cadastro Excluído", "bottom", 2000, "danger");
     }
   }
   }

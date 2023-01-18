@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Perfil', url: '/folder/', icon: 'person' },
+    { title: 'Perfil', url: '/perfil', icon: 'person' },
     { title: 'Email', url: '/folder/Outbox', icon: 'folder' },
     { title: 'Historico de Vagas', url: '/folder/Favorites', icon: 'heart' },
     { title: 'Logout', url: '/login', icon: 'exit' }

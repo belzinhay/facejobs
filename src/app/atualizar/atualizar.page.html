@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-title>Atualizar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  mode="ios">
+ 
+  <form>
+
+    <ion-card>
+      
+      <div class="img">
+        <img src="https://foro.elchapuzasinformatico.com/data/avatars/h/68/68707.jpg?1643904698"  >
+      </div>
+      <ion-item>
+        <ion-label><strong>Nome Completo:</strong></ion-label>
+        <ion-input type="text" name="nome" [ngModel]="cadastro.nome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label><strong>Profissão:</strong></ion-label>
+        <ion-input type="text" name="profissão" [ngModel]="cadastro.profissao"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label><strong>Endereço:</strong></ion-label>
+        <ion-input  type="text" name="local" [ngModel]="cadastro.local"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label><strong>E-mail:</strong></ion-label>
+        <ion-input type="text" name="email" [ngModel]="cadastro.email"></ion-input>
+      </ion-item> <br>
+
+      <ion-button type="submit" color="success" expand="block" routerLink="/perfil">Atualizar</ion-button>
+
+    </ion-card>
+    </form>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="Perfil">
+      <ion-icon name="person-circle" aria-hidden="true"></ion-icon>
+      <ion-label>Perfil</ion-label>
+      
+    </ion-tab-button>
+
+    <ion-tab-button tab="home">
+      <ion-icon name="home" aria-hidden="true"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+
+
+    <ion-tab-button tab="Atualizar">
+      <ion-icon name="information-circle" aria-hidden="true"></ion-icon>
+      <ion-label>Editar</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
